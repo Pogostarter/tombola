@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Låttombola</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f8f8f8;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    .filters {
+      margin-bottom: 1em;
+    }
+    .result {
+      margin-top: 1.5em;
+      padding: 1em;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    select, button {
+      padding: 0.5em;
+      font-size: 1em;
+    }
+    .debug {
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 1em;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🎸 Låttombola</h1>
+
+<div class="filters">
+  <label>
+    Repad:
+    <select id="repadFilter">
+      <option value="">(alla)</option>
+      <option value="NEJ">NEJ</option>
+      <option value="HALVREPAD">HALVREPAD</option>
+      <option value="JA">JA</option>
+    </select>
+  </label>
+
+  <label>
+    Max PRIO (1–5):
+    <select id="prioFilter">
+      <option value="">(alla)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </label>
+
+  <label>
+    Tempo:
+    <select id="tempoFilter">
+      <option value="">(alla)</option>
+      <option value="EPIC">EPIC</option>
+      <option value="SNABB">SNABB</option>
+      <option value="LUGN">LUGN</option>
+      <option value="MELLAN">MELLAN</option>
+      <option value="ÖSIG">ÖSIG</option>
+    </select>
+  </label>
+
+  <label>
+    Endast långa låtar? (över 3:30)
+    <input type="checkbox" id="longOnly">
+  </label>
+
+  <label>
+    Album att inkludera:
+    <input type="text" id="albumFilter" placeholder="Lämna tomt för alla">
+  </label>
+
+  <button onclick="slumpaLåt()">🎲 Slumpa låt</button>
+</div>
+
+<div class="result" id="result"></div>
+<div class="debug" id="debugInfo"></div>
+
+<script>
+let låtdata = [];
+
+fetch('tombola_data.json')
+  .then(res => res.json())
+  .then(data => {
+    // Trim all string fields
+    låtdata = data.map(låt => ({
+      ...låt,
+      repad: låt.repad?.trim(),
+      tempo: låt.tempo?.trim(),
+      album: låt.album?.trim()
+    }));
+  });
+
+function slumpaLåt() {
+  const repad = document.getElementById('repadFilter').value;
+  const prio = document.getElementById('prioFilter').value;
+  const tempo = document.getElementById('tempoFilter').value;
+  const longOnly = document.getElementById('longOnly').checked;
+  const album = document.getElementById('albumFilter').value.toLowerCase();
+
+  let filtrerat = låtdata.filter(låt => {
+    return (!repad || låt.repad === repad) &&
+           (!prio || parseInt(låt.prio) <= parseInt(prio)) &&
+           (!tempo || låt.tempo === tempo) &&
+           (!longOnly || låt.langd_sek > 210) &&
+           (!album || (låt.album && låt.album.toLowerCase().includes(album)));
+  });
+
+  document.getElementById('debugInfo').innerText = `🔎 Filtrerade låtar: ${filtrerat.length}`;
+
+  if (filtrerat.length === 0) {
+    document.getElementById('result').innerHTML = "🚫 Inga låtar matchar dina filter.";
+    return;
+  }
+
+  const slumpad = filtrerat[Math.floor(Math.random() * filtrerat.length)];
+
+  document.getElementById('result').innerHTML = `
+    <strong>${slumpad.titel}</strong><br>
+    Album: ${slumpad.album}<br>
+    Tempo: ${slumpad.tempo}<br>
+    PRIO: ${slumpad.prio}<br>
+    Repad: ${slumpad.repad}<br>
+    Längd: ${slumpad.langd}
+  `;
+}
+</script>
+
+</body>
+</html>

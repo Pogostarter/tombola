@@ -1,0 +1,695 @@
+[
+  {
+    "titel": "Bastard Son",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "EPIC",
+    "album": "Wanderlust & Hardships",
+    "langd": "36:00",
+    "langd_sek": 16560
+  },
+  {
+    "titel": "Compass",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "SNABB",
+    "album": "Wanderlust & Hardships",
+    "langd": "57:00",
+    "langd_sek": 10620
+  },
+  {
+    "titel": "How You Feel",
+    "repad": "JA",
+    "prio": 2,
+    "tempo": "LUGN",
+    "album": "Wanderlust & Hardships",
+    "langd": "36:00",
+    "langd_sek": 12960
+  },
+  {
+    "titel": "Scapegoat",
+    "repad": "HALVREPAD",
+    "prio": 3,
+    "tempo": "MELLAN",
+    "album": "Wanderlust & Hardships",
+    "langd": "41:00",
+    "langd_sek": 9660
+  },
+  {
+    "titel": "One Way Ride",
+    "repad": "HALVREPAD",
+    "prio": 3,
+    "tempo": "LUGN",
+    "album": "Wanderlust & Hardships",
+    "langd": "29:00",
+    "langd_sek": 12540
+  },
+  {
+    "titel": "By My Side",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "SNABB",
+    "album": "Wanderlust & Hardships",
+    "langd": "15:00",
+    "langd_sek": 8100
+  },
+  {
+    "titel": "Outrage",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "ÖSIG",
+    "album": "Wanderlust & Hardships",
+    "langd": "47:00",
+    "langd_sek": 10020
+  },
+  {
+    "titel": "Time Wasted",
+    "repad": "HALVREPAD",
+    "prio": 2,
+    "tempo": "LUGN",
+    "album": "Wanderlust & Hardships",
+    "langd": "29:00",
+    "langd_sek": 12540
+  },
+  {
+    "titel": "Long Road Ahead",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Wanderlust & Hardships",
+    "langd": "04:00",
+    "langd_sek": 11040
+  },
+  {
+    "titel": "Afterparty",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "ÖSIG",
+    "album": "Wanderlust & Hardships",
+    "langd": "24:00",
+    "langd_sek": 8640
+  },
+  {
+    "titel": "We're All Done",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "ÖSIG",
+    "album": "Turn up the Music!",
+    "langd": "31:00",
+    "langd_sek": 9060
+  },
+  {
+    "titel": "I Will Be Right There",
+    "repad": "JA",
+    "prio": 2,
+    "tempo": "MELLAN",
+    "album": "Turn up the Music!",
+    "langd": "15:00",
+    "langd_sek": 11700
+  },
+  {
+    "titel": "Dead of Night",
+    "repad": "HALVREPAD",
+    "prio": 5,
+    "tempo": "SNABB",
+    "album": "Turn up the Music!",
+    "langd": "28:00",
+    "langd_sek": 12480
+  },
+  {
+    "titel": "Seven Seas",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "LUGN",
+    "album": "Turn up the Music!",
+    "langd": "07:00",
+    "langd_sek": 11220
+  },
+  {
+    "titel": "This is the End",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "MELLAN",
+    "album": "Turn up the Music!",
+    "langd": "36:00",
+    "langd_sek": 9360
+  },
+  {
+    "titel": "Black Clouds",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "SNABB",
+    "album": "Turn up the Music!",
+    "langd": "42:00",
+    "langd_sek": 13320
+  },
+  {
+    "titel": "Turn up the Music",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "EPIC",
+    "album": "Turn up the Music!",
+    "langd": "11:00",
+    "langd_sek": 11460
+  },
+  {
+    "titel": "Celebrate Nothing",
+    "repad": "JA",
+    "prio": 2,
+    "tempo": "ÖSIG",
+    "album": "Pineroad",
+    "langd": "41:00",
+    "langd_sek": 9660
+  },
+  {
+    "titel": "Rebel",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "ÖSIG",
+    "album": "Pineroad",
+    "langd": "54:00",
+    "langd_sek": 10440
+  },
+  {
+    "titel": "Lizzie",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Pineroad",
+    "langd": "17:00",
+    "langd_sek": 8220
+  },
+  {
+    "titel": "My Fight",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Pineroad",
+    "langd": "32:00",
+    "langd_sek": 12720
+  },
+  {
+    "titel": "Declaration of Youth",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Pineroad",
+    "langd": "39:00",
+    "langd_sek": 13140
+  },
+  {
+    "titel": "Pineroad",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "LUGN",
+    "album": "Pineroad",
+    "langd": "37:00",
+    "langd_sek": 9420
+  },
+  {
+    "titel": "The Shame",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "ÖSIG",
+    "album": "Pineroad",
+    "langd": "57:00",
+    "langd_sek": 14220
+  },
+  {
+    "titel": "Back for You",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Pineroad",
+    "langd": "57:00",
+    "langd_sek": 14220
+  },
+  {
+    "titel": "Demons",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Pineroad",
+    "langd": "57:00",
+    "langd_sek": 10620
+  },
+  {
+    "titel": "The Storm",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Pineroad",
+    "langd": "53:00",
+    "langd_sek": 13980
+  },
+  {
+    "titel": "When We Fight",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Pineroad",
+    "langd": "51:00",
+    "langd_sek": 13860
+  },
+  {
+    "titel": "Long Live the King",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Pineroad",
+    "langd": "27:00",
+    "langd_sek": 16020
+  },
+  {
+    "titel": "Granvägen",
+    "repad": "HALVREPAD",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Granvägen",
+    "langd": "37:00",
+    "langd_sek": 9420
+  },
+  {
+    "titel": "My Brain Is Hanging Upside Down ",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "MELLAN",
+    "album": "Live at Studio Underjord",
+    "langd": "29:00",
+    "langd_sek": 12540
+  },
+  {
+    "titel": "Damned Generation",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "ÖSIG",
+    "album": "Hometown Serenade",
+    "langd": "16:00",
+    "langd_sek": 11760
+  },
+  {
+    "titel": "Johnny's Words",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "SNABB",
+    "album": "Hometown Serenade",
+    "langd": "18:00",
+    "langd_sek": 11880
+  },
+  {
+    "titel": "Hometown Serenade",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "MELLAN",
+    "album": "Hometown Serenade",
+    "langd": "29:00",
+    "langd_sek": 12540
+  },
+  {
+    "titel": "Bleeding Eyes",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "ÖSIG",
+    "album": "Hometown Serenade",
+    "langd": "36:00",
+    "langd_sek": 9360
+  },
+  {
+    "titel": "Calming Waters",
+    "repad": "HALVREPAD",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Hometown Serenade",
+    "langd": "18:00",
+    "langd_sek": 15480
+  },
+  {
+    "titel": "The Watering Hole",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "LUGN",
+    "album": "Hometown Serenade",
+    "langd": "08:00",
+    "langd_sek": 18480
+  },
+  {
+    "titel": "Freedom",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "SNABB",
+    "album": "Hometown Serenade",
+    "langd": "00:00",
+    "langd_sek": 10800
+  },
+  {
+    "titel": "Break My Bones",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "MELLAN",
+    "album": "Hometown Serenade",
+    "langd": "59:00",
+    "langd_sek": 14340
+  },
+  {
+    "titel": "I Will Find My Own Way",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Hometown Serenade",
+    "langd": "35:00",
+    "langd_sek": 12900
+  },
+  {
+    "titel": "Stay Alive",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Hometown Serenade",
+    "langd": "19:00",
+    "langd_sek": 11940
+  },
+  {
+    "titel": "Going Nowhere",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "SNABB",
+    "album": "Hometown Serenade",
+    "langd": "35:00",
+    "langd_sek": 12900
+  },
+  {
+    "titel": "Kings of Burning Hill",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Hometown Serenade",
+    "langd": "03:00",
+    "langd_sek": 10980
+  },
+  {
+    "titel": "Me and the World",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Hometown Serenade",
+    "langd": "55:00",
+    "langd_sek": 10500
+  },
+  {
+    "titel": "Farewell",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Hometown Serenade",
+    "langd": "07:00",
+    "langd_sek": 11220
+  },
+  {
+    "titel": "My Life Back",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "EPIC",
+    "album": "Hometown Serenade",
+    "langd": "00:00",
+    "langd_sek": 21600
+  },
+  {
+    "titel": "Keep Marching On LUGN",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Keep Marching On Single",
+    "langd": "20:00",
+    "langd_sek": 15600
+  },
+  {
+    "titel": "Living In Vain",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "MELLAN",
+    "album": "Stories Left Untold",
+    "langd": "14:00",
+    "langd_sek": 11640
+  },
+  {
+    "titel": "Make Ends Meet",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "SNABB",
+    "album": "Stories Left Untold",
+    "langd": "00:00",
+    "langd_sek": 14400
+  },
+  {
+    "titel": "Tear It Down",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "MELLAN",
+    "album": "Stories Left Untold",
+    "langd": "02:00",
+    "langd_sek": 14520
+  },
+  {
+    "titel": "Along The Road",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Stories Left Untold",
+    "langd": "34:00",
+    "langd_sek": 12840
+  },
+  {
+    "titel": "Weak Man's Curse",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "SNABB",
+    "album": "Stories Left Untold",
+    "langd": "25:00",
+    "langd_sek": 12300
+  },
+  {
+    "titel": "The Streets Tonight",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "SNABB",
+    "album": "Brothers In Beer",
+    "langd": "55:00",
+    "langd_sek": 17700
+  },
+  {
+    "titel": "Patrick - Demo",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Brothers In Beer",
+    "langd": "58:00",
+    "langd_sek": 7080
+  },
+  {
+    "titel": "Brothers In Beer - Demo",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Brothers In Beer",
+    "langd": "36:00",
+    "langd_sek": 16560
+  },
+  {
+    "titel": "Finspång - Demo",
+    "repad": "JA",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Brothers In Beer",
+    "langd": "42:00",
+    "langd_sek": 13320
+  },
+  {
+    "titel": "Alternative Ulster",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "ÖSIG",
+    "album": "Inflammable Material",
+    "langd": "00:00",
+    "langd_sek": 10800
+  },
+  {
+    "titel": "Career Opportunities",
+    "repad": "JA",
+    "prio": 4,
+    "tempo": "ÖSIG",
+    "album": "The Clash",
+    "langd": "52:00",
+    "langd_sek": 6720
+  },
+  {
+    "titel": "TNT",
+    "repad": "JA",
+    "prio": 3,
+    "tempo": "MELLAN",
+    "album": "High Voltage",
+    "langd": "34:00",
+    "langd_sek": 12840
+  },
+  {
+    "titel": "Medley",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "EPIC",
+    "album": "Flera olika",
+    "langd": "00:00",
+    "langd_sek": 10800
+  },
+  {
+    "titel": "True Believers",
+    "repad": "HALVREPAD",
+    "prio": 3,
+    "tempo": "ÖSIG",
+    "album": "How I Spent My Summer Vacation",
+    "langd": "31:00",
+    "langd_sek": 9060
+  },
+  {
+    "titel": "Memorial Day",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Going Out In Style",
+    "langd": "01:00",
+    "langd_sek": 10860
+  },
+  {
+    "titel": "I Don't Care",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Set To Sail",
+    "langd": "00:00",
+    "langd_sek": 10800
+  },
+  {
+    "titel": "Way of a Man",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Set To Sail",
+    "langd": "32:00",
+    "langd_sek": 12720
+  },
+  {
+    "titel": "A True Hero",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Set To Sail",
+    "langd": "08:00",
+    "langd_sek": 7680
+  },
+  {
+    "titel": "We'll Outlive Them All",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Set To Sail",
+    "langd": "19:00",
+    "langd_sek": 11940
+  },
+  {
+    "titel": "Violence",
+    "repad": "HALVREPAD",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Set To Sail",
+    "langd": "57:00",
+    "langd_sek": 10620
+  },
+  {
+    "titel": "Set To Sail",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Set To Sail",
+    "langd": "55:00",
+    "langd_sek": 10500
+  },
+  {
+    "titel": "Jimmy Law",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Set To Sail",
+    "langd": "44:00",
+    "langd_sek": 9840
+  },
+  {
+    "titel": "Brothers In Beer",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "LUGN",
+    "album": "Set To Sail",
+    "langd": "25:00",
+    "langd_sek": 15900
+  },
+  {
+    "titel": "Blue Lights (of Justice)",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Set To Sail",
+    "langd": "28:00",
+    "langd_sek": 8880
+  },
+  {
+    "titel": "Guns To The Ground",
+    "repad": "JA",
+    "prio": 1,
+    "tempo": "ÖSIG",
+    "album": "Set To Sail",
+    "langd": "16:00",
+    "langd_sek": 11760
+  },
+  {
+    "titel": "Where We Are",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "MELLAN",
+    "album": "Set To Sail",
+    "langd": "44:00",
+    "langd_sek": 13440
+  },
+  {
+    "titel": "I Keep Marching On FAST",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "SNABB",
+    "album": "Set To Sail",
+    "langd": "45:00",
+    "langd_sek": 17100
+  },
+  {
+    "titel": "Backyard Troubadour",
+    "repad": "JA",
+    "prio": 2,
+    "tempo": "SNABB",
+    "album": "Backyard Troubadour",
+    "langd": "11:00",
+    "langd_sek": 15060
+  },
+  {
+    "titel": "Get Up",
+    "repad": "NEJ",
+    "prio": 5,
+    "tempo": "ÖSIG",
+    "album": "Backyard Troubadour",
+    "langd": "21:00",
+    "langd_sek": 8460
+  },
+  {
+    "titel": "Side by Side",
+    "repad": "HALVREPAD",
+    "prio": 4,
+    "tempo": "EPIC",
+    "album": "Backyard Troubadour",
+    "langd": "44:00",
+    "langd_sek": 17040
+  }
+]
