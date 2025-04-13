@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Replokalsbingo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('tomboladesign.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2em;
+      border-radius: 1em;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+
+    select, button {
+      width: 100%;
+      padding: 0.8em;
+      font-size: 1em;
+      margin-bottom: 1em;
+      border: none;
+      border-radius: 0.5em;
+    }
+
+    button {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: 2px solid #000;
+    }
+
+    .result {
+      margin-top: 2em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      border-radius: 0.5em;
+    }
+
+    .label {
+      font-size: 0.9em;
+      font-weight: bold;
+      margin-top: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎸 Replokalsbingo</h1>
+
+    <label for="repadFilter" class="label">Repad</label>
+    <select id="repadFilter">
+      <option value="">(alla)</option>
+      <option value="NEJ">NEJ</option>
+      <option value="HALVREPAD">HALVREPAD</option>
+      <option value="JA">JA</option>
+    </select>
+
+    <label for="prioFilter" class="label">Max PRIO (1–5)</label>
+    <select id="prioFilter">
+      <option value="">(alla)</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+    <label for="tempoFilter" class="label">Tempo</label>
+    <select id="tempoFilter">
+      <option value="">(alla)</option>
+      <option value="EPIC">EPIC</option>
+      <option value="SNABB">SNABB</option>
+      <option value="LUGN">LUGN</option>
+      <option value="MELLAN">MELLAN</option>
+      <option value="ÖSIG">ÖSIG</option>
+    </select>
+
+    <label for="albumFilter" class="label">Album att inkludera</label>
+    <input type="text" id="albumFilter" placeholder="Lämna tomt för alla" style="width:100%; padding:0.8em; margin-bottom:1em; border-radius:0.5em; border:none;">
+
+    <button onclick="slumpaLåt()">VÄLJ LÅT DÅ!</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+<script>
+let låtdata = [];
+
+fetch('tombola_data.json')
+  .then(res => res.json())
+  .then(data => {
+    låtdata = data.map(låt => ({
+      ...låt,
+      repad: låt.repad?.trim(),
+      tempo: låt.tempo?.trim(),
+      album: låt.album?.trim()
+    }));
+  });
+
+function slumpaLåt() {
+  const repad = document.getElementById('repadFilter').value;
+  const prio = document.getElementById('prioFilter').value;
+  const tempo = document.getElementById('tempoFilter').value;
+  const album = document.getElementById('albumFilter').value.toLowerCase();
+
+  let filtrerat = låtdata.filter(låt => {
+    return (!repad || låt.repad === repad) &&
+           (!prio || parseInt(låt.prio) <= parseInt(prio)) &&
+           (!tempo || låt.tempo === tempo) &&
+           (!album || (låt.album && låt.album.toLowerCase().includes(album)));
+  });
+
+  if (filtrerat.length === 0) {
+    document.getElementById('result').innerHTML = "🚫 Inga låtar matchar dina filter.";
+    return;
+  }
+
+  const slumpad = filtrerat[Math.floor(Math.random() * filtrerat.length)];
+
+  document.getElementById('result').innerHTML = `
+    <h2>${slumpad.titel}</h2>
+    <p><strong>Album:</strong> ${slumpad.album}</p>
+    <p><strong>Tempo:</strong> ${slumpad.tempo}</p>
+  `;
+}
+</script>
+
+</body>
+</html>
