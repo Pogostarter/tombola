@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Replokalsbingo</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('tomboladesign.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2em;
+      border-radius: 1em;
+      max-width: 90%;
+      width: 400px;
+    }
+
+    h1 {
+      font-size: 1.8em;
+      margin-bottom: 1em;
+    }
+
+    select, button {
+      width: 100%;
+      padding: 0.8em;
+      font-size: 1em;
+      margin-bottom: 1em;
+      border: none;
+      border-radius: 0.5em;
+    }
+
+    button {
+      background-color: #fff;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.2em;
+      cursor: pointer;
+      border: 2px solid #000;
+    }
+
+    .result {
+      margin-top: 2em;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1em;
+      border-radius: 0.5em;
+    }
+
+    .label {
+      font-size: 0.9em;
+      font-weight: bold;
+      margin-top: 1em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎸 Replokalsbingo</h1>
+
+    <label for="repadFilter" class="label">Repad</label>
+    <select id="repadFilter">
+      <option value="">(alla)</option>
+      <option value="NEJ">NEJ</option>
+      <option value="HALVREPAD">HALVREPAD</option>
+      <option value="JA">JA</option>
+    </select>
+
+    <button onclick="slumpaLåt()">VÄLJ LÅT DÅ!</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+<script>
+let låtdata = [];
+
+const bonusTexter = [
+  "Aj då, lycka till!",
+  "Oj, den här var inte igår. Kommer ni spela rätt?",
+  "Gammal goding, eller mardröm?",
+  "Kör ni den här verkligen? 🫣",
+  "Fett modigt val, säger jag bara.",
+  "Lycka till – ni lär behöva det!",
+  "Den här kan gå hur som helst...",
+  "Önska att man visste hur den gick.",
+  "Ingen minns den här, men kör på!",
+  "Modig slump, my friend."
+];
+
+fetch('tombola_data.json')
+  .then(res => res.json())
+  .then(data => {
+    låtdata = data.map(låt => ({
+      ...låt,
+      repad: låt.repad?.trim(),
+      tempo: låt.tempo?.trim(),
+      album: låt.album?.trim()
+    }));
+  });
+
+function slumpaLåt() {
+  const repad = document.getElementById('repadFilter').value;
+
+  let filtrerat = låtdata.filter(låt => {
+    return (!repad || låt.repad === repad);
+  });
+
+  if (filtrerat.length === 0) {
+    document.getElementById('result').innerHTML = "🚫 Inga låtar matchar dina filter.";
+    return;
+  }
+
+  const slumpad = filtrerat[Math.floor(Math.random() * filtrerat.length)];
+
+  // Kolla om vi ska lägga till bonuskommentar
+  let kommentar = "";
+  if (slumpad.repad === "NEJ" || parseInt(slumpad.prio) >= 4) {
+    kommentar = `<p><em>${bonusTexter[Math.floor(Math.random() * bonusTexter.length)]}</em></p>`;
+  }
+
+  document.getElementById('result').innerHTML = `
+    <h2>${slumpad.titel}</h2>
+    <p><strong>Album:</strong> ${slumpad.album}</p>
+    ${kommentar}
+  `;
+}
+</script>
+
+</body>
+</html>
